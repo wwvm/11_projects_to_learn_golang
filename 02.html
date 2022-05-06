@@ -134,6 +134,11 @@ const thebe_selector_output = ".output, .cell_output"
    CRM系统
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HRMS.html">
+   HRMS
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -423,7 +428,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id3">
 <h3>定义一些结构<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>每个影片有片名，演员，导演，发行时间，上映时间等内容，导演也有姓名等信息。我们将这些信息组合在一起，方便将来引用和存储。</p>
-<div class="highlight-golang notranslate"><div class="highlight"><pre><span></span><span class="kd">type</span><span class="w"> </span><span class="nx">Movie</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">type</span><span class="w"> </span><span class="nx">Movie</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nx">ID</span><span class="w"> </span><span class="kt">string</span><span class="w">  </span><span class="s">`json: &quot;id&quot;`</span><span class="w"></span>
 <span class="w">    </span><span class="nx">Isbn</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json: &quot;isbn&quot;`</span><span class="w"></span>
 <span class="w">    </span><span class="nx">Title</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json: &quot;title&quot;`</span><span class="w"></span>
@@ -440,7 +445,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id4">
 <h3>定义影片信息<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>同样，为了保存影片内容，我们定义一个数组：</p>
-<div class="highlight-golang notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">movies</span><span class="w"> </span><span class="p">[]</span><span class="nx">Movie</span><span class="w"></span>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">movies</span><span class="w"> </span><span class="p">[]</span><span class="nx">Movie</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -450,7 +455,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id6">
 <h3>主函数<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>创建五个路由。</p>
-<div class="highlight-golang notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">(){</span><span class="w"></span>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">(){</span><span class="w"></span>
 <span class="w">    </span><span class="nx">director1</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">Director</span><span class="p">{</span><span class="nx">Firstname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;John&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Lastname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Doe&quot;</span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="nx">director2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">Director</span><span class="p">{</span><span class="nx">Firstname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Steven&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Lastname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Smith&quot;</span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span>
@@ -485,7 +490,7 @@ func write(w http.ResponseWriter, d Movie | []Movie){
     json.NewEncoder(w).Encode(d)
 }
 ``` -->
-<div class="highlight-golang notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span><span class="w"> </span><span class="nx">setHeader</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">){</span><span class="w"></span>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">func</span><span class="w"> </span><span class="nx">setHeader</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">){</span><span class="w"></span>
 <span class="w">    </span><span class="nx">w</span><span class="p">.</span><span class="nx">Header</span><span class="p">().</span><span class="nx">Set</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="p">)</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 

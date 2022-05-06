@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HRMS &#8212; My sample book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CRM系统" href="CRM.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_go-server.html">
+   一个简单的Web服务器
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02.html">
+   构建一个CRUD API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03.html">
+   图书管理系统API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CRM.html">
+   CRM系统
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   HRMS
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HRMS.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FHRMS.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   项目准备
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   代码
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   数据库准备
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   编译运行
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   问题解决
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mongo">
+   Mongo数据库操作
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>HRMS</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   项目准备
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   代码
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   数据库准备
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   编译运行
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   问题解决
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mongo">
+   Mongo数据库操作
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="hrms">
+<h1>HRMS<a class="headerlink" href="#hrms" title="Permalink to this headline">¶</a></h1>
+<p>用mongo数据库做存储。还是使用fiber框架，这次用v2版本。但是代码放在main.go</p>
+<div class="section" id="id1">
+<h2>项目准备<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="k">go</span><span class="w"> </span><span class="nx">mod</span><span class="w"> </span><span class="nx">init</span><span class="w"> </span><span class="nx">hrms</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>代码<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w"></span>
+
+<span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;context&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;log&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;time&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;github.com/gofiber/fiber/v2&quot;</span><span class="w">   </span><span class="c1">// 这里最后一个标记是v2，为何后面可以引用fiber呢？</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;go.mongodb.org/mongo-driver/mongo&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;go.mongodb.org/mongo-driver/mongo/options&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;go.mongodb.org/mongo-driver/bson&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;go.mongodb.org/mongo-driver/bson/primitive&quot;</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+
+<span class="c1">// 定义数据结构</span><span class="w"></span>
+<span class="c1">// mongo数据库以bson存储</span><span class="w"></span>
+<span class="kd">type</span><span class="w"> </span><span class="nx">Employee</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">ID</span><span class="w">      </span><span class="kt">string</span><span class="w">   </span><span class="s">`json:&quot;id,omitempty&quot; bson:&quot;_id,omitempty&quot;`</span><span class="w"> </span><span class="c1">// :及,后面不能有空格，否则数据库中会多字段或者无法生成_id，并且返回的数据中对应不上_id</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Name</span><span class="w">    </span><span class="kt">string</span><span class="w">   </span><span class="s">`json: &quot;name&quot;`</span><span class="w"> </span><span class="c1">// 但这里的:后面可以有空格，不影响</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Age</span><span class="w">     </span><span class="kt">int</span><span class="w">      </span><span class="s">`json: &quot;age&quot;`</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Salary</span><span class="w">  </span><span class="kt">float64</span><span class="w">  </span><span class="s">`json: &quot;salary&quot;`</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kd">type</span><span class="w"> </span><span class="nx">MongoInstance</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Client</span><span class="w"> </span><span class="o">*</span><span class="nx">mongo</span><span class="p">.</span><span class="nx">Client</span><span class="w"></span>
+<span class="w">    </span><span class="nx">db</span><span class="w">     </span><span class="o">*</span><span class="nx">mongo</span><span class="p">.</span><span class="nx">Database</span><span class="w">  </span><span class="c1">// 这里db用全小写是可以的</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// 定义变量</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">mg</span><span class="w"> </span><span class="nx">MongoInstance</span><span class="w"></span>
+
+<span class="c1">// 定义常量</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">dbName</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;hrms&quot;</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">dbURI</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;mongodb://localhost:27017/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">dbName</span><span class="w">  </span><span class="c1">// 这里用户名口令可以放在localhost前面，但是dbName前直接跟端口号？</span><span class="w"></span>
+
+<span class="c1">// 注册路由</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">setupRoutes</span><span class="p">(</span><span class="nx">app</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">App</span><span class="p">){</span><span class="w"></span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">Get</span><span class="p">(</span><span class="s">&quot;/employee&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// 构建查询</span><span class="w"></span>
+<span class="w">        </span><span class="nx">query</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{{}}</span><span class="w"></span>
+<span class="w">        </span><span class="nx">cursor</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">mg</span><span class="p">.</span><span class="nx">db</span><span class="p">.</span><span class="nx">Collection</span><span class="p">(</span><span class="s">&quot;employees&quot;</span><span class="p">).</span><span class="nx">Find</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="nx">query</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">SendString</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span><span class="w">  </span><span class="c1">// 可以直接返回</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// 创建并初始化列表</span><span class="w"></span>
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">employees</span><span class="w"> </span><span class="p">[]</span><span class="nx">Employee</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">make</span><span class="p">([]</span><span class="nx">Employee</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">cursor</span><span class="p">.</span><span class="nx">All</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">employees</span><span class="p">);</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">SendString</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">JSON</span><span class="p">(</span><span class="nx">employees</span><span class="p">)</span><span class="w"> </span><span class="c1">//</span><span class="w"></span>
+<span class="w">    </span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">Post</span><span class="p">(</span><span class="s">&quot;/employee&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">employees</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">mg</span><span class="p">.</span><span class="nx">db</span><span class="p">.</span><span class="nx">Collection</span><span class="p">(</span><span class="s">&quot;employees&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">employee</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">new</span><span class="p">(</span><span class="nx">Employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">BodyParser</span><span class="p">(</span><span class="nx">employee</span><span class="p">);</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">SendString</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">employee</span><span class="p">.</span><span class="nx">ID</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1">// 防止误传了ID</span><span class="w"></span>
+<span class="w">        </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">employees</span><span class="p">.</span><span class="nx">InsertOne</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="nx">employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">SendString</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">filter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">InsertedID</span><span class="p">}}</span><span class="w"> </span><span class="c1">// 过滤最近插入的记录</span><span class="w"></span>
+<span class="w">        </span><span class="nx">record</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">employees</span><span class="p">.</span><span class="nx">FindOne</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="nx">filter</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">record</span><span class="p">.</span><span class="nx">Decode</span><span class="p">(</span><span class="nx">employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">201</span><span class="p">).</span><span class="nx">JSON</span><span class="p">(</span><span class="nx">employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">Put</span><span class="p">(</span><span class="s">&quot;/employee/:id&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">primitive</span><span class="p">.</span><span class="nx">ObjectIDFromHex</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Params</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">employee</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">new</span><span class="p">(</span><span class="nx">Employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">BodyParser</span><span class="p">(</span><span class="nx">employee</span><span class="p">);</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">SendString</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">Error</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">filter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">id</span><span class="p">}}</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// 这里有个问题，如果传入的信息不包括age或者其他任何一个，则对应的原有数据被全部更新成空的。</span><span class="w"></span>
+<span class="w">        </span><span class="nx">update</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{{</span><span class="w"></span>
+<span class="w">            </span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;$set&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">employee</span><span class="p">.</span><span class="nx">Name</span><span class="p">},</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;age&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">employee</span><span class="p">.</span><span class="nx">Age</span><span class="p">},</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;salary&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">employee</span><span class="p">.</span><span class="nx">Salary</span><span class="p">},</span><span class="w">  </span><span class="c1">// 为啥这里最后还要一个,</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"> </span><span class="c1">// 这里也要</span><span class="w"></span>
+<span class="w">        </span><span class="p">}}</span><span class="w"></span>
+<span class="w">        </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">mg</span><span class="p">.</span><span class="nx">db</span><span class="p">.</span><span class="nx">Collection</span><span class="p">(</span><span class="s">&quot;employees&quot;</span><span class="p">).</span><span class="nx">FindOneAndUpdate</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="nx">filter</span><span class="p">,</span><span class="w"> </span><span class="nx">update</span><span class="p">).</span><span class="nx">Err</span><span class="p">()</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">mongo</span><span class="p">.</span><span class="nx">ErrNoDocuments</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="nx">employee</span><span class="p">.</span><span class="nx">ID</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Params</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">JSON</span><span class="p">(</span><span class="nx">employee</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">})</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">app</span><span class="p">.</span><span class="nx">Delete</span><span class="p">(</span><span class="s">&quot;/employee/:id&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">fiber</span><span class="p">.</span><span class="nx">Ctx</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">primitive</span><span class="p">.</span><span class="nx">ObjectIDFromHex</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Params</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="nx">filter</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">bson</span><span class="p">.</span><span class="nx">D</span><span class="p">{{</span><span class="nx">Key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">Value</span><span class="p">:</span><span class="w"> </span><span class="nx">id</span><span class="p">}}</span><span class="w"></span>
+<span class="w">        </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">mg</span><span class="p">.</span><span class="nx">db</span><span class="p">.</span><span class="nx">Collection</span><span class="p">(</span><span class="s">&quot;employees&quot;</span><span class="p">).</span><span class="nx">DeleteOne</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">Context</span><span class="p">(),</span><span class="w"> </span><span class="nx">filter</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">DeletedCount</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">SendStatus</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">Status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">JSON</span><span class="p">(</span><span class="s">&quot;Record deleted!&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">})</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// 数据库连接</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">connect</span><span class="p">()</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">client</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">mongo</span><span class="p">.</span><span class="nx">NewClient</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">Client</span><span class="p">().</span><span class="nx">ApplyURI</span><span class="p">(</span><span class="nx">dbURI</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">err</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">ctx</span><span class="p">,</span><span class="w"> </span><span class="nx">cancel</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">context</span><span class="p">.</span><span class="nx">WithTimeout</span><span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">Background</span><span class="p">(),</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span><span class="w">  </span><span class="c1">// mongo里部分函数是阻塞的，所以需要指定超时</span><span class="w"></span>
+<span class="w">    </span><span class="k">defer</span><span class="w"> </span><span class="nx">cancel</span><span class="p">()</span><span class="w">  </span><span class="c1">// 这应该是超时后要执行的</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">err</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">Connect</span><span class="p">(</span><span class="nx">ctx</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">err</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">mg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">MongoInstance</span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">Client</span><span class="p">:</span><span class="w"> </span><span class="nx">client</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nx">db</span><span class="p">:</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">Database</span><span class="p">(</span><span class="nx">dbName</span><span class="p">),</span><span class="w"> </span><span class="c1">// 这里也要一个,</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">nil</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// 函数入口</span><span class="w"></span>
+<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">(){</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">connect</span><span class="p">();</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w">   </span><span class="c1">// 需要退出程序吗？</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nx">app</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">fiber</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span><span class="w">   </span><span class="c1">// 为何这里可以直接引用fiber？</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">setupRoutes</span><span class="p">(</span><span class="nx">app</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="nx">log</span><span class="p">.</span><span class="nx">Fatal</span><span class="p">(</span><span class="nx">app</span><span class="p">.</span><span class="nx">Listen</span><span class="p">(</span><span class="s">&quot;:8080&quot;</span><span class="p">))</span><span class="w">  </span><span class="c1">// v2版本不能直接用端口号了</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>数据库准备<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker run --rm -d -p <span class="m">27017</span>:27017 mongo
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>编译运行<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="k">go</span><span class="w"> </span><span class="nx">mod</span><span class="w"> </span><span class="nx">tidy</span><span class="w"></span>
+<span class="k">go</span><span class="w"> </span><span class="nx">build</span><span class="w"></span>
+<span class="p">.</span><span class="o">/</span><span class="nx">hrms</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>问题解决<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>在json和bson映射的时候，id字段需要严格不多空格。否则会有莫名其妙的问题。</p></li>
+<li><p>mongo数据库只有在写入数据的时候才会创建数据库和collections，读取的时候如果不存在并不会创建。</p></li>
+<li><p>postman测试发现，返回的字段，除id为全小写外，其他字段名都是首字母大写。原因是在json映射的时候，定义成这样：<code class="docutils literal notranslate"><span class="pre">json:</span> <span class="pre">&quot;name&quot;</span></code>。冒号后有空格导致。</p></li>
+</ol>
+</div>
+<div class="section" id="mongo">
+<h2>Mongo数据库操作<a class="headerlink" href="#mongo" title="Permalink to this headline">¶</a></h2>
+<p>查看所有数据库：show dbs
+查看当前数据库：db
+切换数据库：use <dbname> # 如果dbname不存在，则会立即创建一个
+查看当前库中集合：show collections
+查看集合col下所有数据：db.col.find() 或者 db.col.find().pretty()</p>
+<p>删除当前数据库：db.dropDatabase()
+当前默认数据库：test
+删除集合col: db.col.drop()</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="CRM.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">CRM系统</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By The Jupyter Book Community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
