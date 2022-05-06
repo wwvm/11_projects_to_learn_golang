@@ -53,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CRM系统" href="CRM.html" />
     <link rel="prev" title="构建一个CRUD API" href="02.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -126,6 +127,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    图书管理系统API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CRM.html">
+   CRM系统
   </a>
  </li>
 </ul>
@@ -470,7 +476,7 @@ touch cmd/main/main.go pkg/config/app.go pkg/controllers/book-controller.go pkg/
 
 <span class="kd">type</span><span class="w"> </span><span class="nx">Book</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nx">gorm</span><span class="p">.</span><span class="nx">Model</span><span class="w">   </span><span class="c1">// 内置模型，包含created，updated，deleted时间以及id字段</span><span class="w"></span>
-<span class="w">    </span><span class="nx">Name</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`gorm: &quot;&quot;json:&quot;name&quot;`</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Name</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`gorm: &quot;&quot;json:&quot;name&quot;`</span><span class="w">    </span><span class="c1">// 不知道为啥这里还写一个gorm，但是现象是返回的数据中Name首字母大写，author等就是全小写。</span><span class="w"></span>
 <span class="w">    </span><span class="nx">Author</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;author&quot;`</span><span class="w"></span>
 <span class="w">    </span><span class="nx">Publication</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="s">`json:&quot;publication&quot;`</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -543,8 +549,6 @@ touch cmd/main/main.go pkg/config/app.go pkg/controllers/book-controller.go pkg/
 <span class="w">    </span><span class="s">&quot;bookstore/pkg/utils&quot;</span><span class="w"></span>
 <span class="w">    </span><span class="s">&quot;bookstore/pkg/models&quot;</span><span class="w"></span>
 <span class="p">)</span><span class="w"></span>
-
-<span class="kd">var</span><span class="w"> </span><span class="nx">NewBook</span><span class="w"> </span><span class="nx">models</span><span class="p">.</span><span class="nx">Book</span><span class="w"></span>
 
 
 <span class="kd">func</span><span class="w"> </span><span class="nx">write</span><span class="p">(</span><span class="nx">w</span><span class="w"> </span><span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span><span class="w"> </span><span class="nx">s</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="p">[]</span><span class="kt">byte</span><span class="p">){</span><span class="w"></span>
@@ -669,6 +673,13 @@ touch cmd/main/main.go pkg/config/app.go pkg/controllers/book-controller.go pkg/
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">构建一个CRUD API</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="CRM.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">CRM系统</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             
